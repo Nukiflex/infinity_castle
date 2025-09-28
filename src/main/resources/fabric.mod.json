@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "infinitycastle",
+	"version": "${version}",
+	"name": "Infinity Castle",
+	"description": "Discover the vertiginous scales of the infinity castle!",
+	"authors": [
+		"Nukiflex"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/infinitycastle/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.nukiflex.infinitycastle.InfinityCastle"
+		],
+		"fabric-datagen": [
+			"com.nukiflex.infinitycastle.InfinityCastleDataGenerator"
+		],
+        "client": [
+            "com.nukiflex.infinitycastle.InfinityCastleClient"
+        ]
+	},
+	"mixins": [
+		"infinitycastle.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.8",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
