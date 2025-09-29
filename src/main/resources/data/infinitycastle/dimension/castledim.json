@@ -1,0 +1,10 @@
+{
+  "type": "infinitycastle:castledim_type",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "minecraft:deep_dark",
+      "layers": []
+    }
+  }
+}

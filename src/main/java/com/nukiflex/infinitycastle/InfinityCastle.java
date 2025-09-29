@@ -2,6 +2,10 @@ package com.nukiflex.infinitycastle;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.kyrptonaught.customportalapi.api.CustomPortalBuilder;
+import net.minecraft.block.Blocks;
+import net.minecraft.item.Items;
+import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -18,6 +22,13 @@ public class InfinityCastle implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
+
+        CustomPortalBuilder.beginPortal()
+                .frameBlock(Blocks.RED_NETHER_BRICKS)
+                .lightWithItem(Items.NETHER_STAR)
+                .destDimID(Identifier.of(InfinityCastle.MOD_ID, "castledim"))
+                .tintColor(255,0, 0)
+                .registerPortal();
 
 		LOGGER.info("Hello Fabric world!");
 	}
