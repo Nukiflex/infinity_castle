@@ -14,6 +14,7 @@ public class ModWorldGenerator extends FabricDynamicRegistryProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup registries, Entries entries) {
+        entries.addAll(registries.getOrThrow(RegistryKeys.BIOME));
         entries.addAll(registries.getOrThrow(RegistryKeys.DIMENSION_TYPE));
     }
 

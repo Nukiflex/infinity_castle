@@ -1,6 +1,7 @@
 package com.nukiflex.infinitycastle;
 
 import com.nukiflex.infinitycastle.datagen.ModWorldGenerator;
+import com.nukiflex.infinitycastle.world.biome.ModBiomes;
 import com.nukiflex.infinitycastle.world.dimension.ModDimensions;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
@@ -17,6 +18,7 @@ public class InfinityCastleDataGenerator implements DataGeneratorEntrypoint {
 
     @Override
     public void buildRegistry(RegistryBuilder registryBuilder) {
+        registryBuilder.addRegistry(RegistryKeys.BIOME, ModBiomes::bootstrap);
         registryBuilder.addRegistry(RegistryKeys.DIMENSION_TYPE, ModDimensions::bootstrapType);
     }
 }
