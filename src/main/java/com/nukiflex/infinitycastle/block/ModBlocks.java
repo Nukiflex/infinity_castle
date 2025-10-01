@@ -41,11 +41,9 @@ public class ModBlocks {
     public static void registerModBlocks() {
         InfinityCastle.LOGGER.info("Registering Mod Blocks for " + InfinityCastle.MOD_ID);
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
-            entries.add(ModBlocks.SHOJI_PANE);
-        });
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
-            entries.add(ModBlocks.SHOJI_WOOD_PANE);
-        });
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries ->
+                entries.add(ModBlocks.SHOJI_PANE));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries ->
+                entries.add(ModBlocks.SHOJI_WOOD_PANE));
     }
 }
