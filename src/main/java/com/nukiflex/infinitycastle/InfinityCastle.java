@@ -1,5 +1,6 @@
 package com.nukiflex.infinitycastle;
 
+import com.nukiflex.infinitycastle.block.ModBlocks;
 import net.fabricmc.api.ModInitializer;
 
 import net.kyrptonaught.customportalapi.api.CustomPortalBuilder;
@@ -22,6 +23,8 @@ public class InfinityCastle implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
+
+        ModBlocks.registerModBlocks();
 
         CustomPortalBuilder.beginPortal()
                 .frameBlock(Blocks.RED_NETHER_BRICKS)

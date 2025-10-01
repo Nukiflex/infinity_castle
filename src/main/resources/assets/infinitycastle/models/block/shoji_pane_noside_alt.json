@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_glass_pane_noside_alt",
+  "ambientocclusion" : true,
+  "textures": {
+    "pane": "infinitycastle:block/shoji"
+  }
+}
