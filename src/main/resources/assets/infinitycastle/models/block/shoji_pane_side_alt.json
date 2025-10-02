@@ -1,8 +1,9 @@
 {
-  "parent": "minecraft:block/template_glass_pane_side_alt",
-  "ambientocclusion" : true,
+  "parent": "infinitycastle:block/template_shoji_pane_side_alt",
   "textures": {
-    "edge": "infinitycastle:block/shoji_pane_top",
-    "pane": "infinitycastle:block/shoji"
+    "top": "infinitycastle:block/shoji_pane_top",
+    "bottom": "infinitycastle:block/shoji_pane_top",
+    "pane": "infinitycastle:block/shoji_pane",
+    "side": "infinitycastle:block/shoji_pane"
   }
 }

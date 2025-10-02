@@ -2,6 +2,6 @@
   "parent": "minecraft:block/template_glass_pane_noside",
   "ambientocclusion" : true,
   "textures": {
-    "pane": "infinitycastle:block/shoji_pane"
+    "pane": "infinitycastle:block/shoji_lattice_pane"
   }
 }

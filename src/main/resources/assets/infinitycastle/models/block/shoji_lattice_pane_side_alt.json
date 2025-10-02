@@ -1,0 +1,9 @@
+{
+  "parent": "infinitycastle:block/template_shoji_pane_side_alt",
+  "textures": {
+    "top": "infinitycastle:block/shoji_lattice_pane_top",
+    "bottom": "infinitycastle:block/shoji_lattice_pane_bottom",
+    "pane": "infinitycastle:block/shoji_lattice_pane",
+    "side": "infinitycastle:block/shoji_lattice_pane"
+  }
+}

@@ -1,20 +1,9 @@
 {
-  "parent": "minecraft:block/template_glass_pane_side_alt",
-  "ambientocclusion" : true,
+  "parent": "infinitycastle:block/template_shoji_pane_side_alt",
   "textures": {
-    "edge": "infinitycastle:block/shoji_wood_pane_top",
-    "pane": "infinitycastle:block/shoji_wood_pane"
-  },
-  "elements": [
-    {   "from": [ 7, 0, 9 ],
-      "to": [ 9, 16, 16 ],
-      "faces": {
-        "down":  { "uv": [  7, 0,  9,  7 ], "texture": "#edge" },
-        "up":    { "uv": [  7, 9,  9,  16 ], "texture": "#edge" },
-        "south": { "uv": [  7, 0,  9, 16 ], "texture": "#edge", "cullface": "south" },
-        "west":  { "uv": [  7, 0,  0, 16 ], "texture": "#pane" },
-        "east":  { "uv": [  0, 0,  7, 16 ], "texture": "#pane" }
-      }
-    }
-  ]
+    "top": "infinitycastle:block/shoji_wood_pane_top",
+    "bottom": "infinitycastle:block/shoji_wood_pane_top",
+    "pane": "infinitycastle:block/shoji_wood_pane",
+    "side": "infinitycastle:block/shoji_pane"
+  }
 }

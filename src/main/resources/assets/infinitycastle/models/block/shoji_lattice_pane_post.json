@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/template_glass_pane_post",
+  "ambientocclusion" : true,
+  "textures": {
+    "edge": "infinitycastle:block/shoji_lattice_pane_top",
+    "pane": "infinitycastle:block/shoji_lattice_pane"
+  }
+}

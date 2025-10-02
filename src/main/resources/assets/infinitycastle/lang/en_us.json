@@ -1,7 +1,9 @@
 {
   "item.infinitycastle.shoji_pane" : "Shoji Pane",
   "item.infinitycastle.shoji_wood_pane" : "Shoji Wood Pane",
+  "item.infinitycastle.shoji_lattice_pane" : "Shoji Lattice Pane",
 
   "block.infinitycastle.shoji_pane" : "Shoji Pane",
-  "block.infinitycastle.shoji_wood_pane" : "Shoji Wood Pane"
+  "block.infinitycastle.shoji_wood_pane" : "Shoji Wood Pane",
+  "block.infinitycastle.shoji_lattice_pane" : "Shoji Lattice Pane"
 }

@@ -25,6 +25,9 @@ public class ModBlocks {
     public static final Block SHOJI_WOOD_PANE = registerBlock("shoji_wood_pane", PaneBlock::new,
             AbstractBlock.Settings.create().instrument(NoteBlockInstrument.HAT).strength(0.3F).sounds(BlockSoundGroup.BAMBOO));
 
+    public static final Block SHOJI_LATTICE_PANE = registerBlock("shoji_lattice_pane", PaneBlock::new,
+            AbstractBlock.Settings.create().instrument(NoteBlockInstrument.HAT).strength(0.3F).sounds(BlockSoundGroup.BAMBOO));
+
     private static Block registerBlock(String name, Function<AbstractBlock.Settings, Block> factory, AbstractBlock.Settings settings) {
         RegistryKey<Block> key =  RegistryKey.of(RegistryKeys.BLOCK, Identifier.of(InfinityCastle.MOD_ID, name));
         Block block = factory.apply(settings.registryKey(key));
@@ -45,5 +48,7 @@ public class ModBlocks {
                 entries.add(ModBlocks.SHOJI_PANE));
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries ->
                 entries.add(ModBlocks.SHOJI_WOOD_PANE));
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries ->
+                entries.add(ModBlocks.SHOJI_LATTICE_PANE));
     }
 }

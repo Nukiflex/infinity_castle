@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "infinitycastle:block/shoji_pane"
+    "layer0": "infinitycastle:block/shoji_lattice_pane"
   }
 }

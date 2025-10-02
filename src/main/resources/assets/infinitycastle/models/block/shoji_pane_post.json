@@ -3,6 +3,6 @@
   "ambientocclusion" : true,
   "textures": {
     "edge": "infinitycastle:block/shoji_pane_top",
-    "pane": "infinitycastle:block/shoji"
+    "pane": "infinitycastle:block/shoji_pane"
   }
 }
